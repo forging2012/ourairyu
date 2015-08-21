@@ -1,15 +1,18 @@
-/_site
-/phpMyAdmin
+/_site/
+/phpMyAdmin/
+/dev/
 
 
 
 # WordPress
 
 *.log
-.htaccess
+
 xmlrpc.php
+
 sitemap.xml
 sitemap.xml.gz
+
 wp-admin/
 wp-content/advanced-cache.php
 wp-content/backup-db/
@@ -22,13 +25,12 @@ wp-content/wp-cache-config.php
 wp-content/languages/
 wp-content/plugins/
 wp-content/plugins/hello.php
-wp-content/themes/twentyfifteen/
-wp-content/themes/twentyfourteen/
-wp-content/themes/twentythirteen/
+wp-content/themes/twenty*/
 wp-content/**/index.php
 wp-includes/
 
 /readme.html
 /license.txt
 /wp-*.php
-/dev/
+
+!wp-content/themes/ourairyu/index.php

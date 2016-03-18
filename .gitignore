@@ -19,11 +19,6 @@ _site/
 
 *.log
 
-xmlrpc.php
-
-sitemap.xml
-sitemap.xml.gz
-
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
@@ -38,10 +33,6 @@ wp-content/plugins/hello.php
 wp-content/themes/twenty*/
 wp-content/**/index.php
 wp-includes/
-
-/readme.html
-/license.txt
-/wp-*.php
 
 !wp-content/themes/ourairyu/index.php
 

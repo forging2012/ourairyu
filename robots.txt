@@ -1,0 +1,21 @@
+User-agent: *
+
+Disallow: /resume
+Disallow: /resume/
+Disallow: /backup/
+Disallow: /cgi-bin/
+Disallow: /common/
+Disallow: /delicious-brownies/
+Disallow: /demo/
+Disallow: /doc/
+Disallow: /joke/
+Disallow: /misc/
+Disallow: /__backup/
+Disallow: /__private/
+Disallow: /__virtual/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/
+#Begin Attracta SEO Tools Sitemap. Do not remove
+sitemap: http://cdn.attracta.com/sitemap/2307426.xml.gz
+#End Attracta SEO Tools Sitemap. Do not remove

@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+
+
+body { font-size: 12px; background: #F9F9F9 url("../image/ourai_backside.png") no-repeat right bottom; }
+a:link, a:visited { text-decoration: none; color: #758694; outline: none; }
+a:hover { color: #AAA; text-decoration: underline; }
+
+
+
+.index-title { font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 2.5em; margin-bottom: 0.5em; text-shadow: 1px 1px #FFF; }
+
+.view-wrapper { max-width: 1000px; }
+.view-list { width: 100%; table-layout: fixed; }
+.view-list thead th, .view-list thead td { font-family: Georgia, serif; font-size: 13px; border-bottom: 1px solid #DDD; }
+.view-list tbody th, .view-list tbody td { border-bottom: 1px dotted #EEE; }
+.view-list tr.last th, .view-list tr.last td { border-bottom: none; }
+
+.dir, .file { display: block; width: 16px; height: 16px; text-indent: -999em; background: url("../../common/image/ico-file-16.png") no-repeat; margin: 0 auto; }
+.file { background-position: 0 -16px; }
+.file-css { background-position: 0 -64px; }
+
+
+
+#main { min-height: 100%; position: relative; }
+#content { padding: 10px; }
+#overlay {
+	position: absolute; top: 0; left: 0; right: 0; z-index: -1;
+	height: 100%;
+	text-indent: -999em;
+	background-color: #F9F9F9;
+	opacity: 0.8; filter: alpha(opacity=80);
+}

@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+
+
+
+body { font-size: 12px; background: url("../image/bg-content-kai.png"); }
+
+
+
+.c { width: 1000px; margin: 0 auto; }
+#header { height: 199px; margin-top: 50px; margin-bottom: 30px; position: relative; background-color: #E5E5E5; }
+#content { background-color: #E5E5E5; position: relative; }
+#main { width: 850px; background-color: #F5F5F5; margin-top: -10px; margin-bottom: 50px; }
+#sidebar { width: 150px; }
+
+
+
+#avatar { position: absolute; left: 20px; top: -30px; }
+#avatar img { width: 160px; height: 160px; display: block; background: #FFF; border: 1px solid #CCC; padding: 5px; }
+#avatar a {
+	display: block;
+	border: 1px solid #CCC;
+	text-align: center; text-transform: capitalize; text-decoration: none;
+	margin-top: 10px;
+	font: 14px/30px Verdana; color: #888;
+	background-color: #F5F5F5;
+}
+
+#intro { width: 150px; height: 100%; }
+
+#overview { margin: 0 10px 0 215px; position: relative; height: 100%; overflow: hidden; }
+#overview h2 { font-size: 30px; font-family: Verdana; text-shadow: 1px 1px #F5F5F5; margin-top: 15px; }
+#overview p { text-align: left; text-align-last: auto; -moz-text-align-last: auto; text-justify: auto; text-indent: 0; margin: 0; padding: 0; }
+#overview ul { overflow: hidden; border-top: 3px solid #B7C0C7; position: absolute; bottom: 0; width: 100%; }
+#overview li { float: left; width: 25%; }
+#overview li a {
+	display: block;
+	text-decoration: none; text-align: center; line-height: 60px; color: #444;
+	margin: 10px 0;
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", Sans-serif; font-weight: bold;
+}
+#overview li a:hover { color: #888; }
+
+#sidebar li a { display: block; border-left: 3px solid #B7C0C7; color: #B7C0C7; padding: 5px 0 5px 15px; text-decoration: none; font-size: 14px; font-family: Verdana; }
+#sidebar li.current a { border-left-color: #0871AB; color: #0871AB; font-weight: bold; }
+
+
+
+.timeline { position: relative; margin: 0 15px; padding-top: 15px; }
+.timeline-axis a { width: 3px; position: absolute; top: 0; bottom: 0; left: 50%; margin-left: -1.5px; background-color: #B7C0C7; text-indent: -999em; }
+.timeline-unit {
+	width: 365px;
+	margin-bottom: 15px; padding: 10px;
+	background-color: #EAEAEA;
+	position: relative; z-index: 1;
+	border: 1px solid #B7C0C7; border-radius: 3px;
+}
+.timeline-unit:before, .timeline-unit:after {
+	content: '.';
+	position: absolute; z-index: 3; top: 15px;
+	width: 0; height: 0;
+	font-size: 0;
+	border: 7px solid transparent;
+}
+.timeline-unit:after { border-width: 8px; z-index: 2; top: 14px; }
+.timeline-unit.fl { padding-right: 10px; }
+.timeline-unit.fl:before { border-left-color: #EAEAEA; right: -14px; }
+.timeline-unit.fl:after { border-left-color: #B7C0C7; right: -16px; }
+.timeline-unit.fr { padding-left: 10px; }
+.timeline-unit.fr:before { border-right-color: #EAEAEA; left: -14px; }
+.timeline-unit.fr:after { border-right-color: #B7C0C7; left: -16px; }
+.timeline-unit h3 { font-family: "Microsoft Yahei", "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", Sans-serif; font-size: 13px; margin-bottom: 3px; }
+.timeline-unit p {
+	border-top: 1px solid #B7C0C7;
+	padding: 15px 0; margin: 10px 0 0;
+	line-height: 1.5; text-indent: 0; text-align-last: auto; -moz-text-align-last: auto;
+}

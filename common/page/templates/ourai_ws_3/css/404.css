@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+
+
+#wrapper { position: absolute; top: 130px; bottom: 74px; left: 0; right: 0; }
+#main { height: 100%; float: none; border-top: 1px solid #FFF; }
+#main p { text-indent: 0; padding: 0; font-size: 50px; font-family: Georgia; text-align: left; text-shadow: 0 1px #FFF, 0 0 15px #FFF; }
+#main .abs-ctr-cnt { width: 350px; }
+#footer { position: absolute; left: 0; right: 0; bottom: 0; }

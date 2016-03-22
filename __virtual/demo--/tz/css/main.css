@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+
+
+
+/* --- Reset --- */
+
+body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, blockquote { margin: 0; padding: 0; }
+table { border-collapse: collapse; }
+td, th { padding: 5px 8px; }
+ul { list-style: none outside none; }
+p {
+	text-indent: 2em; text-align: justify; text-justify: inter-ideograph;
+	margin: 0.8em 0;
+}
+img { border: 0; max-width: 100%; }
+a:link, a:visited { text-decoration: none; color: #758694; outline: none; }
+a:hover { color: #888; text-decoration: underline; }
+
+
+
+/* --- Basic Elements --- */
+
+body {
+	font: normal normal 14px/1.5 Tahoma, Verdana, "BitStream vera Sans", Arial, Helvetica, "Microsoft Yahei", SimHei, Sans-serif;
+	color: #333;
+	-webkit-text-size-adjust: none;
+	background-image: url("../image/body-bg.gif");
+}
+
+
+
+/* --- Layout --- */
+
+#wrapper { width: 901px; margin: 0 auto; }
+#header { position: relative; height: 429px; background: url("../image/header-bg.jpg") no-repeat center bottom; }
+#footer { padding: 10px 20px 30px; color: #F5F5F5; font-size: 12px; text-align: center; }
+#main { background-color: #EEF3F6; overflow: hidden; padding: 5px 0 50px; border-radius: 0 0 10px 10px; position: relative; }
+#sidebar {
+	float: left;
+	width: 260px;
+	margin-left: 50px; padding-bottom: 29px;
+	background: #FFF url("../image/feature-footer.jpg") no-repeat 0 bottom;
+	border-radius: 5px;
+}
+#content { width: 520px; margin: 0 30px 0 330px; }
+
+#sidebar li { padding: 3px 0; }
+.submenu { display: none; margin-left: 2em; list-style: outside disc none; }
+#sidebar [data-role='products'] > li > div { padding-left: 1em; background: url("../image/exp.gif") no-repeat left center; }
+#sidebar [data-role='products'] > li.expanded > div { background-image: url("../image/exp_ed.gif"); }
+#sidebar [data-role='products'] > li.expanded .submenu { display: block; }
+
+#navigator { position: absolute; right: 30px; top: 85px; font-size: 0.9em; font-weight: bold; }
+#navigator li { height: 35px; float: left; background: url("../image/menu-bg.gif") no-repeat right 50%; padding: 0 2em; line-height: 35px;  }
+#navigator a { color: #FFF; }
+
+#headline { font-size: 2em; color: #F5F5F5; position: absolute; top: 25px; left: 40px; }
+#headline small { font-size: 0.55em; font-weight: normal; text-align: right; display: block; }
+#briefIntro { width: 340px; height: 185px; position: absolute; top: 140px; left: 42px; padding: 0 10px; }
+
+#content .header {
+	padding: 0.3em 0 0.2em 1em; *padding: 0.3em 0 0.1em 0.6em;
+	border-bottom: 3px solid #2170A8; border-radius: 0 0 0.6em 0.6em;
+}
+#content .body { margin: 20px 10px 10px; }
+#content .image-list li { padding: 5px; border: 1px solid #BBB; background-color: #FFF; margin: 10px auto; }
+#content .image-list img { display: block; }
+
+.module dt {
+	height: 29px;
+	line-height: 29px;
+	color: #FFF;
+	padding-left: 1em;
+	background: url("../image/feature-header.jpg") no-repeat 0 0;
+}
+.module dd {
+	padding: 10px;
+	border-radius: 0 0 5px 5px;
+	background-color: #FFF;
+}
+
+
+
+/**/
+
+#indexProducts dt { background-image: url("../image/comment-head-bg.jpg"); }
+#indexProducts dd { background: white url("../image/comment-footer-bg.jpg") no-repeat left bottom; padding-bottom: 29px; }
+#indexProducts [data-role='products'] { overflow: hidden; }
+#indexProducts [data-role='products'] > li { float: left; width: 45%; padding-left: 1.5em; background: url("../image/arrow.png") no-repeat 0.2em center; }
+
+
+
+[data-page='credentials'] #content .image-list,
+[data-page='products'] #content .image-list { overflow: hidden; }
+[data-page='credentials'] #content .image-list li { float: left; width: 41.5%; margin: 3%; }
+[data-page='products'] #content .image-list li { float: left; width: 24.9%; margin: 3%; *margin: 2.8%; }
+[data-page='products'] #content .image-list span {
+	display: block;
+	font-size: 12px;
+	border-top: 1px dotted #AAA;
+	margin: 3px 3px 0; padding: 3px;
+	white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;
+}
+.page-navi { overflow: hidden; font-size: 12px; font-family: Verdana, "Microsoft Yahei", Sans-serif; margin: 20px -10px 0; }
+.page-turn { float: right; }
+.page-turn li { float: left; margin: 0 5px; }

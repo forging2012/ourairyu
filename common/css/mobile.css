@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+
+
+/* --- *
+	htc G14 - 540*960
+	iPhone4S - 640*960
+ * --- */
+
+/* --- Cross pages --- */
+
+html, body { min-width: 0; width: 100%; height: auto; }
+body { font-size: 1em; background: url("../../image/bg-content-kai.png") repeat; }
+
+
+
+/* --- Basic --- */
+
+#pane { position: static; float: left; padding: 5px; box-shadow: none; border-color: transparent; }
+#page { min-width: 0; margin: 0 0 0 70px; background-color: #EEE; }
+
+
+
+/* --- Pane --- */
+
+#intro img.avatar { width: 48px; height: 48px; padding: 3px; }
+#navi, #copyright { display: none; }
+
+
+
+#content { padding: 0; }
+#toolbar { min-width: 0; position: static; overflow: hidden; padding: 3px 5px 3px 10px; }
+
+.view-item { padding: 15px 10px !important; }

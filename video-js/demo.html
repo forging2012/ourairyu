@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video.js | HTML5 Video Player</title>
+
+  <!-- Chang URLs to wherever Video.js files will be hosted -->
+  <link href="video-js.css" rel="stylesheet" type="text/css">
+  <!-- video.js must be in the <head> for older IEs to work. -->
+  <script src="video.dev.js"></script>
+  <script src="videojs.cuepoints.js"></script>
+
+  <link href="videojs.markers.css" rel="stylesheet">
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="videojs.markers.js"></script>
+
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+  <script>
+    videojs.options.flash.swf = "video-js.swf";
+  </script>
+
+
+</head>
+<body>
+
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+
+  <script>
+    var video = videojs("example_video_1");
+
+    video.on("timeupdate", function() {
+      td = $(this.textTrackDisplay.el());
+      location.hash = td.size() + "," + td.text();
+    });
+
+    video.markers({
+      setting: {
+         markerTip:{
+            default_text: "This is a break"
+         },
+         breakOverlay:{
+            display: true,
+            display_time: 3,
+            default_text: "This is an break overlay "
+         }
+      },
+      //set break time
+      marker_breaks:[9.5, 16, 23.6, 28, 36],
+      marker_text:["this","is","so","cool",":)"]
+    });
+
+    video.ready(function() {
+      console.log(this === videojs("example_video_1"));
+      this.cuepoints();
+      this.addCuepoint({
+        namespace: "logger",
+        start: 0,
+        end: 30,
+        onStart: function( params ) {
+          if ( params.error ) {
+            console.error("Error at second 0");
+          }
+          else {
+            console.log("Log at second 0");
+          }
+        },
+        onEnd: function( params ) {
+          console.log("Action ends at second 30");
+        },
+        params: {error: false}
+      });
+    });
+
+  </script>
+</body>
+</html>

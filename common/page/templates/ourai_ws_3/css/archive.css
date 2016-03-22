@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+
+
+#archives { overflow: hidden; margin: 0 auto; }
+#archives .arc-year { width: 24.7%; float: left; border-right: 1px solid #BFBFBF; border-left: 1px solid #FFF; }
+#archives .arc-year:first-child { border-left-width: 0; }
+#archives .arc-year:last-child { border-right-width: 0; }
+#archives .arc-year > h3 { border-bottom: 1px solid #BFBFBF; font: italic normal 1.5em/1.5 Gerogia; text-align: right; text-shadow: 0 1px #F5F5F5, 0 0 15px #FFF; padding: 0 15px; }
+#archives .arc-list-monthly { padding: 0 15px; border-top: 1px solid #FFF; }
+#archives .arc-month { margin-bottom: 10px; }
+#archives .arc-month:first-child { padding-top: 10px; }
+#archives .arc-month > h3 { margin-bottom: 3px; font-family: Verdana; }

@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+
+
+#page { position: relative; }
+#content { overflow: hidden; }
+
+#bookmarks { overflow: hidden; }
+.bkm { float: left; padding: 5px; margin: 0 5px 5px 0; background-color: wheat; border: 1px solid #666; border-radius: 5px; }
+.bkm-tag {
+	color: #333;
+	display: inline-block;
+	margin-right: 20px;
+	line-height: 19px;
+	position: relative;
+	padding-left: 8px;
+	background-color: #FDFDFD;
+	border-top: 1px solid #E9E9E9;
+	border-left: 1px solid #D6D6D6;
+	border-bottom: 1px solid #D3D3D3;
+	border-radius: 4px 0 0 4px;
+	font-family: Verdana;
+	font-size: 11px;
+	*padding-right: 8px;
+	*border-right: 1px solid #D6D6D6;
+	*margin-right: 5px;
+}
+.bkm-tag:hover { background-color: #F3FCFF; }
+.bkm-tag:hover:after { background-position: -30px 0; }
+.bkm-tag:after {
+	width: 15px;
+	height: 21px;
+	content: 'arrow';
+	display: inline-block;
+	text-indent: -999em;
+	position: absolute;
+	right: -15px;
+	top: -1px;
+	background: url("../image/bg-tag.png") no-repeat -45px 0;
+}
+.bkm-dt { display: block; }
+
+#selector { width: 100%; position: absolute; bottom: 20px; left: 0; background-color: orange; font-size: 1.2em; line-height: 2.5; display: none; }
+#tagsContainer { width: 90%; overflow: hidden; margin: 0 auto; padding: 0 1%; background-color: yellow; }
+#tagPrev, #tagNext { width: 4%; text-indent: -999em; background-color: gold; }
+#tags { width: 500000px; overflow: hidden; }
+#tags > li { float: left; }

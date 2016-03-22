@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+
+
+
+html, body { min-width: 1000px; overflow-y: auto; }
+p { text-indent: 0; padding: 0; margin: 0; }
+h2 { font-size: 16px; margin-bottom: 10px; text-shadow: 0 1px #F5F5F5, 0 0 15px #FFF; }
+
+#wrapper { max-width: 1000px; height: 100%; margin: 0 auto; font-family: "Microsoft Yahei", Tahoma, Arial, Verdana, sans-serif; }
+#signup-welcome { margin-bottom: 5px; }
+
+.abs-ctr-cnt {
+	width: 320px;
+	padding: 15px;
+	background-color: #E5E5E5;
+	background: url("../image/bg-content-kai.png") repeat;
+	border: 1px solid #A6A6A6; border-width: 1px 0 0 1px; border-radius: 5px;
+	*border-width: 1px; *border-color: #BBB #FFF #FFF #BBB;
+	box-shadow: 0 1px 2px #FFF, 0 0 0.5em -0.2em #666 inset;
+}
+.mu_panel {
+	overflow: hidden;
+	background-color: #FFF;
+	border: 1px solid #BEBEBE; border-radius: 5px;
+	box-shadow: 0 0 1.3em -0.6em #666, 1px 1px #EEE, -1px -1px #E5E5E5;
+	padding: 15px; 
+}
+
+body[data-page="signup"] .mu_register { width: auto; margin: 0; }
+body[data-page="signup"] form { margin-top: 0; }
+body[data-page="signup"] label { cursor: pointer; margin: 0; display: inline; }
+body[data-page="signup"] [data-for="user_email"] { margin-top: 10px; }
+body[data-page="signup"] #user_name,
+body[data-page="signup"] #user_email {
+	width: 276px;
+	border: 1px solid #A6A6A6;
+	margin-top: 0;
+	background-color: #FBFBFB;
+	border: 1px solid #E5E5E5; border-radius: 3px;
+	box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.2) inset;
+	font-size: 16px;
+	line-height: 30px;
+	height: 30px;
+	padding: 0 5px;
+}
+body[data-page="signup"] #backtoblog { display: block; padding: 5px 15px; margin-top: 15px; }
+body[data-page="signup"] .error { border-radius: 3px; margin-bottom: 5px; }
+body[data-page="signup"] .submit { margin-top: 20px; }
+body[data-page="signup"] .submit input {
+	font: bold 14px/34px "Microsoft Yahei", Tahoma, Arial, Verdana, sans-serif;
+	height: 34px;
+	cursor: pointer;
+	margin: 0; padding: 0;
+	border: 1px solid #CCC; border-radius: 5px;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #E4E4E4);
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F9F9F9), to(#E4E4E4));
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFF9F9F9, endcolorstr=#FFE4E4E4, gradientType=0);
+	background-color: #B7C0C7\9;
+}
+body[data-page="signup"] .submit input:active {
+	background-image: -moz-linear-gradient(center top , #E4E4E4, #F9F9F9);
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#E4E4E4), to(#F9F9F9));
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFE4E4E4, endcolorstr=#FFF9F9F9, gradientType=0);
+	background-color: #DFE3E6\9;
+	border-color: #CCC;
+}

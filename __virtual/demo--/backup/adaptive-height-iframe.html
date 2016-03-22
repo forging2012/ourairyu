@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>iframe test</title>
+		<script>
+			function iframeLoaded( iframe ) {
+				iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + "px";
+			}
+		</script>
+		<!--
+			@Title: iframe 自适应高度
+			@Description: 根据子页面文档高度自动调整父页面 iframe 高度
+			@Privacy: public
+		-->
+	</head>
+	<body>
+		<iframe src="adaptive-height-iframe-childrenpage.html" onload="iframeLoaded(this)"></iframe>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+
+/* --- Global --- */
+
+body { font: 0.9em/1.5 "Microsoft Yahei", "Hiragino Sans GB", Tahoma, Arial, Verdana, Sans-serif; background-color: #F7F7F7; }
+img { max-width: 100%; }
+
+a:link,
+a:visited { text-decoration: none; color: #758694; outline: none; }
+a:hover { color: #888; text-decoration: underline; }
+
+.hover-noline a:hover { text-decoration: none; }
+
+
+
+/* --- Header: caption --- */
+
+#caption { text-shadow: 0 1px #FFF, 0 0 15px #FFF; text-align: center; padding: 1em 0; }
+#caption h1 { font: bold 1.9em/1 Georgia; text-decoration: underline; }
+#caption p { font: 0.85em/1.5 Verdana; text-transform: capitalize; margin: 0; padding: 0; display: inline-block; *display: inline; *zoom: 1; }
+
+
+
+/* --- Main --- */
+
+.layout-container { padding: 0 1em; }
+.layout-footer { border-top: 1px solid #DDD; background-color: #EEE; box-shadow: 0 0.5em 1em -1em #666 inset; }
+
+
+
+/* --- Footer --- */
+
+#extraModules { display: none; padding: 0 1em; }
+
+#copyright { font-size: 0.85em; font-family: Verdana; display: block; padding: 1em; clear: both; }
+
+
+
+/* --- Entries --- */
+
+.entry-title { font-size: 1.2em; }
+.entry-info .date { font-size: 0.85em; }
+.entry-info .tags { display: none; }

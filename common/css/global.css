@@ -1,0 +1,141 @@
+/* ----------------------------------------- 浮动 ----------------------------------------- */
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+/* ----------------------------------------- 清除浮动 ----------------------------------------- */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+
+/* ----------------------------------------- 绝对居中 ----------------------------------------- */
+.absolutecenter {
+	display: table;
+	height: 100%;
+	width: 100%;
+	#position: relative;
+	overflow: hidden;
+}
+
+.absolutecenter-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	#position: absolute;
+	#top: 50%;
+} 
+
+.absolutecenter-content {
+	width: 100%;
+	#position: relative;
+	#top: -50%;
+	margin: 0 auto;
+	word-break: break-all; 
+	/*overflow: auto;*/
+	word-wrap: break-word;
+}
+
+
+/* ----------------------------------------- 列表表格 ----------------------------------------- */
+.table-list {
+	table-layout: fixed;
+	background-color: #FFF;
+}
+
+.table-list th, .table-list td {
+	border-width: 1px;
+}
+
+.table-list thead th, .table-list tfoot th {
+	text-align: left;
+	background: -moz-linear-gradient(center top, #FFF, #CCC 100%);
+}
+
+
+/* ----------------------------------------- 表单表格 ----------------------------------------- */
+.table-form {
+	width: 100%;
+}
+
+.table-form caption {
+	text-align: left;
+	font-weight: bold;
+}
+
+.table-form th {
+	border-width: 1px 0;
+}
+
+.table-form td {
+	border-width: 1px 0 1px 1px;
+}
+
+.table-form tbody th {
+	text-align: right;
+	font-weight: normal;
+}
+
+
+/* ----------------------------------------- 表单元素 ----------------------------------------- */
+.input-form {
+	height: 21px;
+	line-height: 21px;
+}
+
+.submit-form {
+	cursor: pointer;
+}
+
+
+/* ----------------------------------------- 按钮 ----------------------------------------- */
+.button {
+	display: block;
+	background: -moz-linear-gradient(center top, #FFF, #D0EAFF 100%);
+	border-radius: 5px;
+	border: 1px solid #797979;
+	padding: 5px;
+}
+
+.button span {
+	display: block;
+}
+
+
+
+.btnAdd {
+	float: left;
+}
+
+.btnDelete {
+	float: left;
+}
+
+.btnExport {
+	float: left;
+}
+
+.btnSearch {
+	float: right;
+}

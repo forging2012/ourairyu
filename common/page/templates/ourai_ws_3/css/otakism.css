@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+
+
+
+.summary { padding: 5px; }
+.summary .item { min-width: 200px; }
+.summary .item h3 {
+	border: 1px solid #C5CACE; border-bottom-width: 0; border-radius: 5px 5px 0 0;
+	padding: 10px;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #E4E4E4);
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F9F9F9), to(#E4E4E4));
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFF9F9F9, endcolorstr=#FFE4E4E4, gradientType=0);
+	background-color: #B7C0C7\9;
+}
+.summary .item a:link, .summary .item a:visited { color: #666; }
+.summary .item a:hover { color: #999; }
+.summary .item div { padding: 10px; background-color: #F5F5F5; border: 1px solid #C5CACE; border-radius: 0 0 5px 5px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset, 0 1px 0 #FFF; }
+.summary .item span { display: block; border: 1px solid #BBB; border-radius: 3px; background-color: #E5E5E5; padding: 8px 12px; margin: 5px 0 15px; text-align: center; }
+.summary .item span a { text-decoration: underline; font-weight: bold; }
+.summary .item ul { list-style: disc inside none; margin: 8px 0; }
+.summary .item li { border-bottom: 1px dotted #DDD; padding: 5px; }
+.summary .item li.first { padding-top: 0; }
+.summary .item li.last { border-bottom: 0; padding-bottom: 0; }
+.summary .item li small { display: block; color: #999; margin-top: 3px; }
+
+
+
+.view-item-body { margin: 15px 156px 0 0; border-right: 1px dashed #C5CACE; }
+.view-item-desc { overflow: hidden; padding-right: 15px; }
+.view-item-desc img { width: 128px; padding: 3px; border: 1px solid #333; margin: 0 15px 15px 0; background-color: #FFF; }
+.view-item-desc p { margin: 0; }
+
+.view-item-meta { width: 141px; padding-left: 15px; margin-right: -157px; }
+.view-item-meta .episode {
+	width: 139px;
+	overflow: hidden;
+	background-color: #FFF;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #E4E4E4);
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F9F9F9), to(#E4E4E4));
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFF9F9F9, endcolorstr=#FFE4E4E4, gradientType=0);
+	border: 1px solid #C5CACE; border-radius: 5px;
+	padding: 5px 0; margin-bottom: 10px;
+	line-height: 1.4;
+}
+.view-item-meta .episode li.fl { border-right: 1px solid #BFBFBF; border-left: 1px solid #FFF; text-align: center; }
+.view-item-meta .episode li.fl.first { border-left: none; }
+.view-item-meta .episode li.fl.last { border-right: none; }
+.view-item-meta .episode .count { display: block; width: 45px; font-family: Verdana; }
+.view-item-meta .episode .separator { clear: both; overflow: hidden; margin: 0 3px; }
+.view-item-meta .episode .separator hr { border-width: 1px 0; border-style: solid; border-color: #BFBFBF transparent #FFF; }
+.view-item-meta .episode .rate { text-align: center; font-family: Arial; padding-bottom: 3px; }
+.view-item-meta .genre {
+	color: #333;
+	line-height: 19px;
+	padding: 0 8px; margin: 3px;
+	background-color: #FDFDFD;
+	border: 1px solid transparent;
+	border-color: #E9E9E9 #D6D6D6 #D3D3D3;
+	border-radius: 4px;
+	font-size: 11px;
+}
+.view-item-meta .genre:hover { background-color: #F3FCFF; }
+.view-item-meta blockquote {
+	border: 1px solid #C5CACE; border-radius: 5px;
+	background-color: #F9F9F9;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset, 0 1px 0 #FFF;
+	padding: 7px 12px; margin-top: 15px;
+	color: #888;
+	position: relative;
+}
+.view-item-meta blockquote:before {
+	content: '.';
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: 10px solid transparent;
+	border-top-width: 0;
+	border-bottom-color: #C5CACE;
+	text-indent: -999em;
+}
+.view-item-meta blockquote p { margin: 0; text-indent: 0; font-size: 12px; line-height: 1.5; }
+
+.view-item-overview {
+	font-size: 1em; color: #888;
+	padding: 5px 10px; margin-top: 10px;
+	border: 1px solid #C5CACE; border-radius: 5px;
+	background-color: #F9F9F9;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset, 0 1px 0 #FFF;
+	clear: both;
+	overflow: hidden;
+}
+.view-item-overview dt { display: none; }
+.view-item-overview ul { overflow: hidden; }
+.view-item-overview li { float: left; padding: 0 10px; border-left: 1px solid #FFF; border-right: 1px solid #E0E0E0; }
+.view-item-overview li:first-child { padding-left: 0; border-left-style: none; }
+.view-item-overview li:last-child { padding-right: 0; border-right-style: none; }
+
+#test {}
+#test dl {}

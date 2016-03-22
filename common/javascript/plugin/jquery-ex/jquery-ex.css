@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+
+
+
+/*
+ *	jQuery Extend-Events Tab
+ *
+ *	@Author:	Ourai Lin
+ *	@Date:		2011.11.19
+ *	@Version:	1.0.2
+ *
+ *	http://www.otakism.com/
+ *
+ */
+ 
+.ex-roll { width: 3000px; }
+.ex-roll-wrapper { position: absolute; background: #F5F5F5; }
+.ex-roll-content { overflow: hidden; position: relative; }
+.ex-roll-item { float: left; margin-left: 5px; }
+.ex-roll-title { display: block; position: relative; }
+.ex-roll-prev, .ex-roll-next { position: absolute; text-indent: -999em; width: 32px; height: 48px; background: yellow; }
+.ex-roll-prev {}
+.ex-roll-next {}
+
+
+
+/*
+ *	jQuery Extend-Events List
+ *
+ *	@Author:	Ourai Lin
+ *	@Date:		2011.11.23
+ *	@Version:	1.0.2
+ *
+ *	http://www.otakism.com/
+ *
+ */
+
+table.ex-list {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-color: #A6A6A6;
+	background-color: #FFF;
+	box-shadow: 0 0 3px #BBB;
+	overflow: hidden;
+}
+table.ex-list th, table.ex-list td {
+	width: 100%;
+	border: 1px solid #E8E8E8;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	word-wrap: normal\0;
+	word-break: break-all;
+	padding: 5px;
+	vertical-align: top;
+}
+table.ex-list-texthide th, table.ex-list-texthide td {
+	text-overflow: ellipsis;
+	word-break: keep-all;
+	white-space: nowrap;
+}
+table.ex-list thead th, table.ex-list tfoot th {
+	text-align: left;
+	border: 1px solid #A6A6A6;
+	border-color: #A6A6A6 transparent;
+	#border-width: 1px 0 !important;
+	background: -moz-linear-gradient(center top, #E2E2E2, #C1C1C1 100%) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#E2E2E2), to(#C1C1C1));
+	background: #E2E2E2 url("images/ex-bg-table-header.png") repeat-x 0 0\9;
+}
+table.ex-list .ex-list-edge-left {
+	border-left: 1px solid #A6A6A6 !important;
+}
+table.ex-list td, table.ex-list tbody .ex-list-edge-left {
+	#border-top: none !important;
+}
+table.ex-list .ex-list-edge-right {
+	border-right: 1px solid #A6A6A6 !important;
+}
+table.ex-list .ex-list-row-odd {
+	background-color: #F5F5F5 !important;
+}
+table.ex-list tbody tr.last th, table.ex-list tbody tr.last td {
+	border-bottom: 1px solid #A6A6A6;
+}
+table.ex-list input:hover {
+	cursor: pointer;
+}
+table.ex-list tr.ex-list-row-selected, table.ex-list tr:hover {
+	background-color: #D5D5D5 !important;
+}
+table.ex-list-colresize {
+	cursor: col-resize !important;
+}
+
+
+
+div.ex-list-meta {
+	margin-top: 5px;
+	padding: 0 5px;
+	overflow: hidden;
+}
+
+table.ex-list-meta {
+	width: 100%;
+	table-layout: fixed;
+	border: 1px solid transparent;
+}
+
+table.ex-list-meta td, table.ex-list-meta th {
+	border: 1px solid transparent;
+}
+
+table.ex-list-meta th {
+	text-align: center;
+}
+
+.ex-list-page {
+	float: right;
+	line-height: 30px;
+}
+
+.ex-list-page span, .ex-list-page a {
+	float: left;
+	margin-left: 10px;
+}
+
+.ex-list-page-prev, .ex-list-page-next, .ex-list-page-first, .ex-list-page-last {
+	width: 16px;
+	background: url("images/ex-icon-pagination.png") no-repeat -8px center;
+	text-indent: -999em;
+}
+
+.ex-list-page-next {
+	background-position: -40px center;
+}
+
+.ex-list-page-first {
+	background-position: -72px center;
+}
+
+.ex-list-page-last {
+	background-position: -104px center;
+}
+
+.ex-list-page-total {
+	margin-right: 20px;
+}

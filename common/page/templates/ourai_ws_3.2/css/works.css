@@ -1,0 +1,40 @@
+.project_info {
+  margin: 0;
+}
+
+.repos {
+  list-style: none outside none;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.repo {
+  width: 33.33333333%;
+  float: left;
+}
+
+.repo > div {
+  position: relative;
+  height: 150px;
+  margin: 0 10px 20px;
+  padding: 10px;
+  border: 1px solid #C5CACE;
+  border-radius: 5px;
+  background-color: #FEFEFE;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset, 0 1px 0 #FFF;
+  overflow: hidden;
+}
+
+.repo_lang {
+  font-size: .9em;
+  font-family: Monaco,Consolas, "Lucida Console", monospace, "Courier New", Courier, Serif;
+}
+
+.repo time {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: .9em;
+  font-style: italic;
+  color: #BBB;
+}

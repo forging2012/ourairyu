@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+
+
+/** styles for all **/
+
+.toc { background-color: #F5F5F5; }
+
+
+
+/** styles for Resume **/
+
+.profile {
+	/*width: 50%; min-width: 500px;*/
+	max-width: 1024px;
+	font: 1.2em/1.5 "Microsoft Yahei", Tahoma, Arial, Verdana, sans-serif;
+	padding: 5px;
+}
+/*.profile h3 { border-bottom: 1px dashed #D0D0D0; padding: 1.5em 0 0.3em; margin-bottom: 0.6em; overflow: hidden; }*/
+.profile h3.first { padding-top: 1em; }
+/*.profile p { margin: 0; }*/
+.profile table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+.profile th, .profile td { border: 1px solid #C0C0C0; }
+.profile thead th { background-color: #E0E0E0; }
+
+.overview-list { overflow: hidden; }
+.overview-list dt { width: 10em; float: left; font-family: Verdana, "Microsoft Yahei", sans-serif; text-align: right; padding-right: 1.5em; color: #747474; }
+.overview-list dd { overflow: hidden; margin-bottom: 1.5em; }
+.overview-list h4 { font-size: 1.1em; margin-bottom: 4px; }
+.overview-list p { text-indent: 0; margin: 0; line-height: 1.5; }
+.overview-list p.first,
+.project-info { margin-top: 8px; }
+.project-info p { margin: 0; }
+.company-department { margin-left: 1em; }
+.overview-table { background-color: #F5F5F5; margin-bottom: 1.5em; }
+.overview-table tbody th { text-align: right; vertical-align: top; }
+.overview-table ol.n-rst { margin: 0; }
+
+#briefInfo {
+	display: none;
+	float: right;
+	width: auto;
+	font-size: 12px;
+	border: 1px solid #C0C0C0; border-radius: 5px;
+	padding-top: 15px; margin: 1em 0 1em 1.5em;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #E4E4E4);
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F9F9F9), to(#E4E4E4));
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FFF9F9F9, endcolorstr=#FFE4E4E4, gradientType=0);
+	background-color: #B7C0C7\9;
+}
+#headline { margin: 0 15px; padding: 0 5px; }
+#headline h1 { font-size: 2.2em; letter-spacing: 0.1em; }
+#headline p {
+	font-size: 1.2em; font-family: "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+	line-height: 1.5; text-indent: 0; text-align: left;
+	margin: 0 0 3px; padding: 0;
+}
+#headline dl { overflow: hidden; }
+#headline dt { display: none; }
+#headline dd { float: left; border-right: 1px solid #C5C5C5; padding: 0 8px; }
+#headline dd.first { padding-left: 0; }
+#headline dd.last { border-right: none; }
+
+#overview { overflow: hidden; border-top: 1px dotted #C0C0C0; margin: 10px 15px 15px; padding: 10px 5px 0; }
+#overview dt { width: 4em; float: left; text-align: right; padding-right: 1.5em; color: #747474; }
+#overview dd { overflow: hidden; }
+#overview code { background-color: #FFF; border: 1px solid #C5C5C5; margin: 0; padding: 0; }
+
+#experiences { display: none; }
+#experiences div { padding: 3px 0; }
+#experiences p { line-height: 1.5; text-indent: 0; text-align: left; }
+#experiences p:last-child { padding-bottom: 0; }
+#experiences .project-period { margin-right: 1.5em; }
+#experiences tbody th,
+
+
+
+/** styles for About **/
+
+.info-list li { margin: 5px 0; }
+
+#contact,
+#chronicle { padding-top: 2px; }

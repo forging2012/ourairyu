@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+
+
+/* --- Miscellaneous --- */
+
+body { font-size: 12px; background-color: #EEE; }
+
+.required { color: #F00 !important; }
+
+
+
+/* --- Links --- */
+
+a:link,
+a:visited { text-decoration: none; color: #758694; outline: none; }
+a:hover { color: #888; }
+
+
+
+/* --- Module icons --- */
+
+.mod-atc .mod-ttl span { background-image: url("../image/icon-menu-article.png"); }
+.mod-alb .mod-ttl span { background-image: url("../image/icon-menu-album.png"); }
+.mod-bkm .mod-ttl span { background-image: url("../image/icon-menu-bookmark.png"); }
+.mod-prj .mod-ttl span { background-image: url("../image/icon-menu-project.png"); }
+.mod-trl .mod-ttl span { background-image: url("../image/icon-menu-tutorial.png"); }
+.mod-doc .mod-ttl span { background-image: url("../image/icon-menu-document.png"); }
+.mod-otk .mod-ttl span { background-image: url("../image/icon-menu-otakism.png"); }
+.mod-csl .mod-ttl span { background-image: url("../image/icon-menu-console.png"); }
+.mod-prf .mod-ttl span { background-image: url("../image/icon-menu-profile.png"); }
+.mod-wrk .mod-ttl span { background-image: url("../image/icon-menu-application.png"); }

@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+
+
+
+/* --- Cross pages --- */
+
+body { font-size: 12px; background: #E7EBF2 url("../image/bg-content-kai.png"); }
+.inner { position: relative; max-width: 1000px; margin: 0 auto; }
+
+
+
+/* --- Main content --- */
+
+#main {
+	background-color: #F5F5F5;
+	border: 1px solid #A6A6A6; border-top: 3px solid #0871AB; border-radius: 5px;
+	padding: 15px; margin: 50px auto;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+}
+#main p { text-align-last: auto; -moz-text-align-last: auto; }
+
+.tab {
+	display: none;
+	position: absolute; top: 0; right: 10px;
+	line-height: 30px;
+	border-radius: 0 0 5px 5px; border: 1px solid #E0E0E0; border-top: none;
+	background-color: #FAF7F7;
+}
+.tab-itm { float: left; border-left: 1px solid #FFF; border-right: 1px solid #E0E0E0; }
+.tab-itm:first-child { border-radius: 0 0 0 4px; border-left: none; }
+.tab-itm:last-child { border-radius: 0 0 4px 0; border-right: none; }
+.tab-itm a { display: block; padding: 0 8px; text-decoration: none; color: #444; }
+.tab-itm.current { background-color: #E5E5E5; }
+
+#filter {
+	width: 250px;
+	margin: 50px -45px 0 0; padding: 10px;
+	background-color: #FFF;
+	border: 1px solid #A6A6A6; border-radius: 5px;
+	box-shadow: 0 0 1em -0.5em #333, 1px 1px #EEE, -1px -1px #E5E5E5;
+}
+#filter .title {
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, STHei, sans-serif; font-size: 14px;
+	border-bottom: 1px dotted #A6A6A6;
+	padding-bottom: 2px; margin-bottom: 5px;
+	text-shadow: 1px 1px 2px #FFF;
+}
+#filter .catalog { margin: 5px 0 15px; font-family: Verdana, Sans-serif; }
+#filter .catalog:last-child { margin-bottom: 0; }
+#filter .catalog a { color: #444; text-decoration: none; margin-right: 10px; }
+
+#pinBoard {
+	/*border: 1px solid #C5CACE; border-radius: 5px;
+	background-color: #F5F5F5;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset, 0 1px 0 #FFF;*/
+	padding: 15px; margin: 50px 250px 0 0;
+	position: relative;
+}
+/*.pin { position: absolute; background-color: #FFF; box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4); padding: 10px; }
+.pin img { display: block; max-width: 100%; max-height: 100%; }
+.pin-holder { text-align: center; background-color: #F2F0F0; }
+.pin-meta { font-size: 12px; margin-top: 10px; }
+.pin-title { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", Sans-serif; font-size: 12px; color: #444; }
+.pin-summary { font-size: 9px; font-family: Verdana, Sans-serif; color: #888; text-align: left; margin-top: 5px; }*/
+
+.view-list .item { padding: 15px 0; border-bottom: 1px solid #BFBFBF; border-top: 1px solid #FFF; overflow: hidden; position: relative; }
+.view-list .item:first-child { border-top: none; padding-top: 0; }
+.view-list .item:last-child { border-bottom: none; padding-bottom: 0; }
+.view-list .item-title h3 { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", Sans-serif; font-size: 16px; color: #444; display: inline; }
+.view-list .item-overlay { width: 112px; float: left; margin-right: 15px; padding: 3px; border: 1px solid #888; overflow: hidden; }
+.view-list .item-title img { display: block; max-width: 100%; max-height: 100%; }
+.view-list .item-desc { overflow: hidden; text-indent: 0; line-height: 1.5; margin: 0; }
+.view-list .item-genre { clear: both; border-top: 1px solid #E0E0E0; padding-top: 5px; margin: 8px 0 0 127px; }
+.view-list .item-genre a { color: #444; text-decoration: none; }
+.view-list .item-date { display: block; margin: 5px 0; background: url("../image/icon-calendar.png") no-repeat 0 50%; overflow: hidden; padding-left: 20px; }
+
+.view-list .item-meta { margin: 0 0 15px 24px; }
+
+.view-list .item-episode {
+/*	position: absolute; right: 0; top: 15px;*/
+	overflow: hidden;
+	background-color: #FFF;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #E4E4E4);
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F9F9F9), to(#E4E4E4));
+	border: 1px solid #C5CACE; border-radius: 5px;
+	padding: 5px 0;
+	line-height: 1.4;
+}
+.view-list .item-episode li { float: left; border-right: 1px solid #BFBFBF; border-left: 1px solid #FFF; text-align: center; }
+.view-list .item-episode li:first-child { border-left: none; }
+.view-list .item-episode li:last-child { border-right: none; }
+.view-list .item-episode .count { display: block; width: 40px; font-family: Verdana; }
+.view-list .item:first-child .item-episode { top: 0; }
+
+.view-list .item-rate { width: 126px; margin-top: 20px; }
+.view-list .item-rate .rate-point { color: #F00; font-family: Georgia; }
+.view-list .item-rate .rate-star { display: block; margin-top: 3px; }
+.view-list .item-rate .rate-review {
+	text-indent: 0;
+	background-color: #FCFCFC;
+	border: 1px solid #C5CACE; border-radius: 5px;
+	padding: 5px 8px; margin: 15px 0 0;
+	line-height: 1.5;
+	position: relative;
+}
+.view-list .item-rate .rate-review:before, .view-list .item-rate .rate-review:after {
+	content: '\20';
+	display: block;
+	width: 0; height: 0;
+	border: 8px solid transparent; border-bottom-color: #C5CACE;
+	position: absolute; top: -17px; left: 10px;
+	z-index: 5;
+}
+.view-list .item-rate .rate-review:after { border-bottom-color: #FCFCFC; top: -16px; z-index: 15; }
+
+
+#pagination { font-family: Verdana; margin: 10px 15px 0; padding-top: 10px; border-top: 2px solid #0871AB; }
+#pagination * { margin: 0 3px; padding: 0 3px; text-decoration: none; }
+#pagination .current { font-weight: bold; }

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+
+.layout-inner { width: 960px; margin: 0 auto; }
+
+main > header { height: 200px; background-color: #EEE; border-bottom: 1px solid #DDD; }
+main > header .layout-inner { height: 100%; }
+
+.profile { position: relative; height: 100%; margin-left: 150px; }
+.profile_info { padding: 58px 0 0 20px; }
+.profile_info p { padding: 0; margin: 10px 0 0; font-size: 18px; line-height: 1.5; color: #888; }
+
+.avatar_link {
+  position: absolute; left: -110px; top: 50%; margin-top: -43px;
+}
+.avatar {
+  width: 100px; height: 100px;
+  border: 3px solid #FFF; border-radius: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  vertical-align: middle;
+}
+
+.author a {
+  font-family: Georgia; font-size: 40px; color: #333; text-decoration: none;
+  text-shadow: 0 1px #F5F5F5, 0 0 15px #FFF;
+}
+.author a:hover { color: #555; }

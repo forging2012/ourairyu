@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+
+
+html, body { min-width: 0; }
+body { font-family: "Microsoft Yahei", Tahoma, Arial, Verdana, sans-serif; background-color: #EEE; }
+a:link, a:visited { text-decoration: none; color: #758694; outline: none; border-bottom: 1px dotted #758694; }
+a:hover { color: #888; }
+
+#content { max-width: 1000px; margin: 0 auto; overflow: hidden; }
+#content h1 { font-size: 1.5em; margin: 1.5em 0 1em; text-shadow: 1px 1px #F5F5F5, 2px 2px #C0C0C0; text-align: center; }
+
+#signature { float: right; margin-top: 3em; text-indent: 0; }
+#signature span { display: block; text-align: center; }

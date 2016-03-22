@@ -1,0 +1,73 @@
+<!--
+	@Title: 「婚前性」问答
+	@Description: 一个关于「婚前性」的问答游戏
+	@Privacy: public
+-->
+<script>
+
+function Woman( prop ) {
+	this.name = prop.name || "Fake 黑木耳";
+	this.gender = "female";
+	this.allowPremaritalSex = prop.allowPremaritalSex || false;					// 是否允许婚前〇行为
+	this.allowSexualImpotence = prop.allowSexualImpotence || false;				// 是否允许对方〇无能
+}
+
+function Man( prop ) {
+	this.name = prop.name || "Gay Shy Fool";
+	this.gender = "male";
+	this.isSexualImpotence = prop.isSexualImpotence || false;
+}
+
+function shallWeMakeLove( man, woman, isMarried ) {
+	var returnValue = "";
+	
+	if ( isMarried == false ) {
+		returnValue = woman.allowPremaritalSex == true ?
+						( man.isSexualImpotence == true ?
+							"册那！幸好在结婚前及时发现，不然后悔终生啊！" :
+							"好啊，让我来次绝赞的〇〇吧！亲爱的「" + man.name + "」～" ) :
+						"不嘛～人家想留到结婚之后再献给你嘛～暂时忍忍吧，我亲爱的「" + man.name + "」～";
+	}
+	else if ( man.isSexualImpotence == true ) {
+		returnValue = woman.allowSexualImpotence == false ? petitionForDivorce() : "册那，「日」生活太不和谐了！真郁闷……还是出去找汉子吧～";
+	}
+	else {
+		returnValue = "老公，你真棒！我「" + woman.name + "」嫁给你「" + man.name + "」此生无悔啊～xing福死了～哪天带我去那个空中飞机上体验一把吧～";
+	}
+	
+	return returnValue;
+}
+
+function petitionForDivorce() {
+	var rv = "";
+	
+	if ( !window.ppppp ) {
+		alert( "因为在结婚之前不知道对方〇无能，于是——" );
+		window.ppppp = true;
+	}
+	
+	if ( (prompt( "我要离婚！（若对方同意请输入「Y」）", "N" )).toLowerCase() == "n" ) {
+		rv = petitionForDivorce();
+	}
+	else {
+		rv = "你这个没种的男人！！！";
+	}
+	
+	return rv;
+}
+
+var w = new Woman( { name: "比西施还美比潘金莲还骚的凤姐",
+					allowPremaritalSex: (prompt( "能接受婚前〇行为么？（请输入「Y」或「N」）" ).toLowerCase() == "n" ? false : true ),
+					allowSexualImpotence: (prompt( "能接受对方〇无能么？（请输入「Y」或「N」）" ).toLowerCase() == "n" ? false : true ) } ),
+	m = new Man( { isSexualImpotence: (prompt( "对方〇无能么？（请输入「Y」或「N」）" ).toLowerCase() == "n" ? false : true ) } );
+
+alert( "「" + m.name + "」在结婚前跟「" + w.name + "」〇〇" );
+alert( shallWeMakeLove( m, w, false ) );
+
+if ( w.allowPremaritalSex == false || m.isSexualImpotence == false ) {
+	alert( "「" + m.name + "」在结婚后跟「" + w.name + "」〇〇" );
+	alert( shallWeMakeLove( m, w, true ) );
+}
+
+alert( "It's a joke! Happy Women's Day." );
+</script>

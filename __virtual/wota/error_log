@@ -1,0 +1,23 @@
+[03-Jul-2012 09:29:42 UTC] PHP Fatal error:  Call to undefined method Database::total() in /home/ourai/public_html/wota/oc_content/home.php on line 21
+[03-Jul-2012 13:32:15 UTC] PHP Fatal error:  Call to undefined method Database::total() in /home/ourai/public_html/wota/oc_content/home.php on line 21
+[25-Jul-2012 21:14:00] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:14:31] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:14:37] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:15:08] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:17:37] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:17:56] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:21:26] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:26:07] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:35:09] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:39:17] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:40:48] PHP Warning:  Invalid argument supplied for foreach() in /home/ourai/public_html/wota/oc_content/home.php on line 36
+[25-Jul-2012 21:46:19] PHP Warning:  Invalid argument supplied for foreach() in /home/ourai/public_html/wota/oc_content/home.php on line 36
+[25-Jul-2012 21:47:05] PHP Warning:  Invalid argument supplied for foreach() in /home/ourai/public_html/wota/oc_content/home.php on line 36
+[25-Jul-2012 21:47:31] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:49:46] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 105
+[25-Jul-2012 21:52:59] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /home/ourai/public_html/common/class/class-database.php on line 69
+[25-Jul-2012 21:54:14] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 106
+[25-Jul-2012 21:55:27] PHP Warning:  phpinfo() has been disabled for security reasons in /home/ourai/public_html/common/class/class-database.php on line 101
+[25-Jul-2012 21:55:47] PHP Warning:  phpinfo() has been disabled for security reasons in /home/ourai/public_html/common/class/class-database.php on line 68
+[25-Jul-2012 21:56:06] PHP Warning:  phpinfo() has been disabled for security reasons in /home/ourai/public_html/common/class/class-database.php on line 65
+[25-Jul-2012 22:04:35] PHP Fatal error:  Call to undefined function  lcfirst() in /home/ourai/public_html/common/class/class-database.php on line 106

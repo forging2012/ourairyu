@@ -1,0 +1,307 @@
+<html>
+<head>
+<title>DeliciousBrownies 1.1 Reference</title>
+<style type="text/css">
+ p, pre, span { padding: 0; margin: 0; }
+ body {
+	font-family: verdana;
+	font-size: 0.75em;
+	line-height: 1.7em;
+ }
+ a, a:active, a:hover, a:visited { color: #00f; text-decoration: none; }
+ code { font-family: "courier new"; font-size: 1.1em; font-weight: bold; }
+ pre {
+	margin-top: 1.5em;
+	overflow: auto;
+	font-family: monospace;
+	font-size: 1.1em;
+	margin-left: 1.5em;
+ }
+ pre .d { color: #000000; }
+ pre .f { color: #0000bb; } 
+ pre .k { color: #007700; }
+ pre .c { color: #ff8000; }
+ pre .s { color: #dd0000; } 
+ div { padding: 0; margin: 0; border: 0; border-bottom: #888 1px dotted; max-width: 70em; }
+ #header, #toc { padding-bottom: 1em; }
+ .fsection { padding: 1em 0; border-bottom: #888 1px dotted; }
+ #footer { padding-top: 1em; border: 0; }
+ .indent-1 { margin-left: 1em; border: 0; }
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>DeliciousBrownies 1.1 Reference</h1>
+<p>Nashruddin Amin<br />
+   <a href="http://www.nashruddin.com">http://www.nashruddin.com</a></p>
+</div>
+
+<div id="toc">
+<h2>Table of Contents</h2>
+<p><strong>Functions</strong></p>
+<ol>
+ <li><a href="#DeliciousBrownies">DeliciousBrownies</a></li>
+ <li><a href="#setProxyHost">setProxyHost</a></li>
+ <li><a href="#setProxyUser">setProxyUser</a></li>
+ <li><a href="#setUsername">setUsername</a></li>
+ <li><a href="#setPassword">setPassword</a></li>
+ <li><a href="#getAllPosts">getAllPosts</a></li>
+ <li><a href="#getPosts">getPosts</a></li>
+ <li><a href="#getRecentPosts">getRecentPosts</a></li>
+ <li><a href="#addPost">addPost</a></li>
+ <li><a href="#updatePost">updatePost</a></li>
+ <li><a href="#deletePost">deletePost</a></li>
+ <li><a href="#getTags">getTags</a></li>
+ <li><a href="#renameTag">renameTag</a></li>
+ <li><a href="#getAllBundles">getAllBundles</a></li>
+ <li><a href="#setBundle">setBundle</a></li>
+ <li><a href="#deleteBundle">deleteBundle</a></li>
+ <li><a href="#getLastUpdate">getLastUpdate</a></li>
+ <li><a href="#getInfo">getInfo</a></li>
+ <li><a href="#getDeliciousMsg">getDeliciousMsg</a></li>
+</ol>
+<p><strong>Examples</strong></p>
+<ol>
+ <li><a href="#exp1">Get recent post</a></li>
+ <li><a href="#exp2">Add a post</a></li>
+ <li><a href="#exp3">Update a post</a></li>
+ <li><a href="#exp4">Submit multiple posts</a></li>
+ <li></li>
+</ol>
+</div>
+
+<a name="DeliciousBrownies"></a>
+<div class="fsection">
+ <p><strong>void DeliciousBrownies()</strong></p>
+ <p>Class constructor</p>
+</div>
+
+<a name="setProxyHost"></a>
+<div class="fsection">
+ <p><strong>void setProxyHost ( $hostport )</strong></p>
+ <p>Set hostname and port number for proxy in format "host:port".</p>
+</div>
+
+<a name="setProxyUser"></a>
+<div class="fsection">
+ <p><strong>void setProxyUser ( $userpass )</strong></p>
+ <p>Set username and password for proxy in format "username:password".</p>
+</div>
+
+<a name="setUsername"></a>
+<div class="fsection">
+ <p><strong>void setUsername ( $username )</strong></p>
+ <p>Set username for del.icio.us login</p>
+</div>
+
+<a name="setPassword"></a>
+<div class="fsection">
+ <p><strong>void setPassword ( $password )</strong></p>
+ <p>Set password for del.icio.us login</p>
+</div>
+
+<a name="getAllPosts"></a>
+<div class="fsection">
+ <p><strong>mixed getAllPosts()</strong></p>
+ <p>Get all of user's posts in del.icio.us. Please use sparingly. Call the <code>getLastUpdate</code>
+    function to see if you need to fetch this at all. Returns array of user's posts on success, 
+    FALSE otherwise.</p>
+</div>
+
+<a name="getPosts"></a>
+<div class="fsection">
+ <p><strong>mixed getPosts ( $tag = '', $url = '' )</strong></p>
+ <p>Get posts that match with the given tag and/or url. If no arguments are given, most
+    recent date will be used.</p>
+</div>
+
+<a name="getRecentPosts"></a>
+<div class="fsection">
+ <p><strong>mixed getRecentPosts ( $tag = '', $count = 15 )</strong></p>
+ <p>Get the most recent posts, filtered by the given tag. Returns array of posts (max. 100) 
+    on success, FALSE otherwise.</p>
+</div>
+
+<a name="addPost"></a>
+<div class="fsection">
+ <p><strong>boolean addPost ( $url, $desc, $tags = '', $notes = '', $shared = true )</strong></p>
+ <p>Add a post to del.icio.us. Parameters:</p>
+    <div class="indent-1">
+     <p><code>url</code>: the URL of the item.<br />
+	    <code>desc</code>: Description of the item.<br />
+	    <code>tags</code>: Tags for the item, separate with space.<br />
+	    <code>notes</code>: Notes for the item (also known as 'extended').<br />
+	    <code>shared</code>: share with other users.</p></div>
+ <p>Returns TRUE on success, FALSE otherwise.</p>
+</div>
+
+<a name="updatePost"></a>
+<div class="fsection">
+ <p><strong>boolean updatePost ( $url, $desc, $tags = '', $notes = '', $shared = true )</strong></p>
+ <p>Update a post. Parameters:</p>
+ <div class="indent-1">
+  <p><code>url</code>: the URL of the item.<br />
+	 <code>desc</code>: Description of the item.<br />
+	 <code>tags</code>: Tags for the item, separate with space.<br />
+	 <code>notes</code>: Notes for the item (also known as 'extended').<br />
+	 <code>shared</code>: share with other users.</p>
+ </div>
+ <p>Returns TRUE on success, FALSE otherwise.</p>
+</div>
+
+<a name="deletePost"></a>
+<div class="fsection">
+ <p><strong>boolean deletePost ( $url )</strong></p>
+ <p>Delete a post specified by the given url. Returns TRUE on success, FALSE otherwise.</p>
+</div>
+
+<a name="getTags"></a>
+<div class="fsection">
+ <p><strong>mixed getTags()</strong></p>
+ <p>Get list of tags and number of times used by user. Returns array of tags on sucess,
+    FALSE otherwise</p>
+</div>
+
+<a name="renameTag"></a>
+<div class="fsection">
+ <p><strong>boolean renameTag ( $old, $new )</strong></p>
+ <p>Rename an existing tag with a new name.</p>
+ <div class="indent-1">
+  <p><code>old</code>: Tag to rename.<br />
+     <code>new</code>: New name.</p>
+ </div> 
+ <p>Returns TRUE on success, FALSE otherwise.</p>
+</div>
+
+<a name="getAllBundles"></a>
+<div class="fsection">
+ <p><strong>mixed getAllBundles()</strong></p>
+ <p>Retrieve all of user's bundles. Returns array of bundles on success, FALSE otherwise.</p>
+</div>
+
+<a name="setBundle"></a>
+<div class="fsection">
+ <p><strong>boolan setBundle ( $bundle, $tags )</strong></p>
+ <p>Assign a set of tags to a single bundle, wipes away previous settings for bundle.
+    Returns TRUE on success, FALSE otherwise.</p>
+</div>
+
+<a name="deleteBundle"></a>
+<div class="fsection">
+ <p><strong>boolean deleteBundle()</strong></p>
+ <p>Delete a bundle. Returns TRUE on success, FALSE otherwise.</p>
+</div>
+
+<a name="getLastUpdate"></a>
+<div class="fsection">
+ <p><strong>mixed getLastUpdate()</strong></p>
+ <p>Retrieve the last update time for the user. Returns datetime in string 
+   (ex: 2005-11-29T20:31:50Z) on success, FALSE otherwise.</p>
+</div>
+
+<a name="getInfo"></a>
+<div class="fsection">
+ <p><strong>array getInfo()</strong></p>
+ <p>Returns array of Curl's last exec info.</p>
+</div>
+
+<a name="getDeliciousMsg"></a>
+<div class="fsection">
+ <p><strong>string getDeliciousMsg()</strong></p>
+ <p>Get recent message from del.icio.us.</p>
+</div>
+
+<h2>Examples</h2>
+
+<a name="exp1"></a>
+<div class="fsection">
+ <p><strong>1. Get recent posts</strong></p>
+ <pre>
+<span class="f">$d </span><span class="k">= new </span><span class="f">DeliciousBrownies</span><span class="k">;
+</span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">setUsername</span><span class="k">(</span><span class="s">"myusername"</span><span class="k">);
+</span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">setPassword</span><span class="k">(</span><span class="s">"mypassword"</span><span class="k">);
+</span><span class="f">$res </span><span class="k">= </span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">getRecentPosts</span><span class="k">();
+
+if (!</span><span class="f">$res</span><span class="k">) {
+    print </span><span class="s">"something went wrong"</span><span class="k">;
+    exit;
+}
+</span><span class="f">print_r</span><span class="k">(</span><span class="f">$res</span><span class="k">);
+</span><span class="c">/*
+outputs something like this:
+Array
+(
+[0] =&gt; Array
+    (
+        [href] =&gt; http://www.nashruddin.com/pub/free-php-scripts.html
+        [description] =&gt; PHP scripts, tips n tricks, code snippets
+        [extended] =&gt; PHP scripts, tips n tricks, code snippets
+        [hash] =&gt; 9bfe73757a108356d25c3b8fcb3b3e3a
+        [tag] =&gt; php-scripts code-snippets php-tips-n-tricks
+        [time] =&gt; 2008-04-20T05:48:16Z
+    )
+
+[1] =&gt; Array
+    (
+        [href] =&gt; http://www.nashruddin.com/
+        [description] =&gt; Computer vision &amp; PHP resources
+        [extended] =&gt; Nashruddin'd blog, computer vision, php scripts, php code snippets
+        [hash] =&gt; 057594308f84a4d3b35e0bc08a25af67
+        [tag] =&gt; computer-vision php-scripts code-snippets
+        [time] =&gt; 2008-04-20T05:47:55Z
+    )    
+)
+*/</span></pre>
+</div>
+
+<a name="exp2"></a>
+<div class="fsection">
+ <p><strong>2. Add a post</strong></p>
+ <pre><span class="f">$url   </span><span class="k">= </span><span class="s">"http://www.google.com"</span><span class="k">;
+</span><span class="f">$desc  </span><span class="k">= </span><span class="s">"Search the web"</span><span class="k">;
+</span><span class="f">$tags  </span><span class="k">= </span><span class="s">"search-engine groups"</span><span class="k">;
+</span><span class="f">$notes </span><span class="k">= </span><span class="s">"Best search engine, try it!"</span><span class="k">;
+
+</span><span class="f">$d </span><span class="k">= new </span><span class="f">DeliciousBrownies</span><span class="k">;
+</span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">setUsername</span><span class="k">(</span><span class="s">"myusername"</span><span class="k">);
+</span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">setPassword</span><span class="k">(</span><span class="s">"mypassword"</span><span class="k">);
+</span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">addPost</span><span class="k">(</span><span class="f">$url</span><span class="k">, </span><span class="f">$desc</span><span class="k">, </span><span class="f">$tags</span><span class="k">, </span><span class="f">$notes</span><span class="k">);</span></pre>
+</div>
+
+<a name="exp3"></a>
+<div class="fsection">
+ <p><strong>3. Update a post</strong></p>
+ <pre><span class="f">$url </span><span class="k">= </span><span class="s">"http://www.google.com"</span><span class="k">;
+</span><span class="f">$desc </span><span class="k">= </span><span class="s">"Search Engine"</span><span class="k">;
+</span><span class="f">$tags </span><span class="k">= </span><span class="s">"various-groups search-engine mail-hosting"</span><span class="k">;
+</span><span class="f">$notes </span><span class="k">= </span><span class="s">"Best search engine, try it!"</span><span class="k">;
+    
+</span><span class="c">/* once you have create DeliciousBrownies object and setup username/password */
+</span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">updatePost</span><span class="k">(</span><span class="f">$url</span><span class="k">, </span><span class="f">$desc</span><span class="k">, </span><span class="f">$tags</span><span class="k">, </span><span class="f">$notes</span><span class="k">);</span></pre>
+</div>
+
+<a name="exp4"></a>
+<div class="fsection">
+ <p><strong>4. Submit multiple posts</strong></p>
+ <pre><span class="f">$d </span><span class="k">= new </span><span class="f">DeliciousBrownies</span><span class="k">;
+</span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">setUsername</span><span class="k">(</span><span class="s">"myusername"</span><span class="k">);
+</span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">setPassword</span><span class="k">(</span><span class="s">"mypassword"</span><span class="k">);
+
+</span><span class="f">$result </span><span class="k">= </span><span class="f">mysql_query</span><span class="k">(</span><span class="s">"select url, desc, tags, notes from articles"</span><span class="k">);
+while(</span><span class="f">$row </span><span class="k">= </span><span class="f">mysql_fetch_object</span><span class="k">(</span><span class="f">$result</span><span class="k">)) {
+    </span><span class="f">$url   </span><span class="k">= </span><span class="f">$row</span><span class="k">-&gt;</span><span class="f">url</span><span class="k">;
+    </span><span class="f">$desc  </span><span class="k">= </span><span class="f">$row</span><span class="k">-&gt;</span><span class="f">desc</span><span class="k">;
+    </span><span class="f">$tags  </span><span class="k">= </span><span class="f">$row</span><span class="k">-&gt;</span><span class="f">tags</span><span class="k">;
+    </span><span class="f">$notes </span><span class="k">= </span><span class="f">$row</span><span class="k">-&gt;</span><span class="f">notes</span><span class="k">;
+    </span><span class="f">$d</span><span class="k">-&gt;</span><span class="f">addPost</span><span class="k">(</span><span class="f">$url</span><span class="k">, </span><span class="f">$desc</span><span class="k">, </span><span class="f">$tags</span><span class="k">, </span><span class="f">$notes</span><span class="k">);
+}
+</span></pre>
+</div>
+
+<div id="footer">
+ <p>Copyright &copy; 2008 Nashruddin Amin.</p>
+</div>
+
+</body>
+</html>

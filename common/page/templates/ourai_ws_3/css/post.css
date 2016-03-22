@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+
+
+/* --- Content: Article Content --- */
+
+.atc { padding: 0 5px; }
+.atc-hd { margin-bottom: 15px; }
+.atc-bd { margin-bottom: 5px; padding: 7px 15px; overflow: hidden; font-size: 1.2em; }
+.atc-bd p { font-size: 1em; }
+.atc-bd p.n-rst { margin: 0; text-indent: 0; }
+.atc-bd li { margin: 3px 0; }
+.atc-bd .n-rst { margin-top: 0; }
+.atc-bd .annotation { border-style: none; padding: 0; }
+.atc-bd sup { font-family: Verdana; }
+.atc-table { min-width: 300px; }
+.atc-table tbody tr { background-color: transparent !important; }
+.atc-table tbody th { background-color: #F5F5F5; }
+
+ul.atc-list { padding: 8px 8px 8px 35px; margin-bottom: 0; background-color: #F3F3F3; border: 1px dashed #A6A6A6; border-radius: 5px; }
+
+blockquote.preface { font-style: italic; color: #666; border: 1px dashed #A6A6A6; border-radius: 8px; padding: 10px; margin: 15px 0; background-color: #FFF; }
+blockquote.preface p { margin: 0; }
+
+.underline { text-decoration: underline; }
+
+.code_fragment { font-size: 12px; background-color: #1B2426; overflow: hidden; }
+.code_fragment > h3 { color: #EEE; font-size: 13px; margin: 7px; padding: 0 0 5px 8px; border-bottom: 1px solid #999; }
+.code_fragment .syntaxhighlighter { margin: 0 !important; }
+.code_fragment .syntaxhighlighter table { table-layout: auto; margin-top: 5px !important; margin-bottom: 5px !important; }
+
+
+
+/* --- Comment --- */
+
+#comments { border-top: 1px solid #BFBFBF; margin-top: 15px; }
+#commentForm { border-top: 1px solid #FFF; padding-top: 15px; margin-bottom: 20px; }
+
+#commentList { list-style: none outside none; /*border-top: 1px solid #BFBFBF; border-bottom: 1px solid #FFF;*/ }
+.cmt { /*border-top: 1px solid #FFF; border-bottom: 1px solid #BFBFBF; */padding: 10px; }
+.cmt .avatar { float: left; margin-right: 10px; }
+.cmt .cmt-cnt { overflow: hidden; }
+.cmt .cmt-bd { margin-top: 10px; padding: 5px; position: relative; border: 1px solid #C5CACE; border-radius: 5px; background-color: #FCFCFC; padding: 15px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset, 0 1px 0 #FFF; }
+.cmt .cmt-bd:before { content: "."; width: 0; height: 0; font-size: 0; display: block; border: 6px solid transparent; position: absolute; left: 10px; top: -13px; border-bottom-color: #C5CACE; }
+.cmt .cmt-bd blockquote { max-width: 400px; margin: 0 0 10px 5px; border-left: 3px solid #39F; padding: 5px 5px 5px 10px; }
+.cmt .cmt-act { float: right; }
+.cmt .cmt-atr { font-weight: bold; color: #333; }
+.cmt a.cmt-atr:hover { color: #888; }
+
+#respond { width: 600px; }
+#respond td { padding: 3px 0; }
+#respond .ipt-txt { width: 183px; }
+#respond textarea { width: 588px; min-height: 120px; }
+#respond .ipt-txt, #respond textarea { padding: 5px; border: 1px solid #C5CACE; }
+#email { display: block; margin: 0 auto; }
+
+#respond caption, #comments h3 { font-weight: bold; text-align: left; font-size: 16px; line-height: 1.5; margin-bottom: 5px; text-shadow: 0 1px #F5F5F5, 0 0 15px #FFF; }
+#respond caption:before, #comments h3:before { content: "\2020"; margin: 0 5px; }

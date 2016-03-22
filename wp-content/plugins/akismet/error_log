@@ -1,0 +1,1 @@
+[30-Sep-2014 11:41:03 UTC] PHP Fatal error:  Call to undefined function plugin_dir_url() in /home/ourai/public_html/wp-content/plugins/akismet/akismet.php on line 32

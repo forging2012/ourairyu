@@ -1,0 +1,29 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #DCEDF4;
+}
+
+ul {
+	/*list-style: disc inside none;*/
+}
+
+p {
+	padding: 3px 0;
+}
+
+a:link, a:visited {
+	color: #0F67A1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #47A9D2;
+}
+
+#header .top {
+	font-size: 13px;
+}

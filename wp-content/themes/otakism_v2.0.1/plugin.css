@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/***** Clean Archives Reloaded *****/
+.car-yearmonth {
+	font-weight: bold;
+}
+
+.car-list li {
+	margin-bottom: 20px;
+	list-style: none outside none;
+}
+
+.car-monthlisting li {
+	margin-bottom: 0;
+	list-style: disc inside none;
+	text-indent: 1em;
+}

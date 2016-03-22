@@ -1,0 +1,65 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #F0F0F0;
+}
+
+ul {
+	/*list-style: disc inside none;*/
+}
+
+p {
+	padding: 3px 0;
+}
+
+a:link, a:visited {
+	color: #0F67A1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #47A9D2;
+}
+
+#header {
+	background-color: #586573;
+}
+
+#header .top {
+	font-size: 13px;
+	background-image: url("../../images/bg_toolbar_lab.png");
+	border-bottom-color: #8F97A2;
+}
+
+#header .top a:hover {
+	background-color: #5F5F5F;
+}
+
+#header .middle img {
+	visibility: hidden;
+}
+
+#navigationLocal a {
+	background-color: #252B33;
+}
+
+#navigationLocal a:hover {
+	background-color: #39414A;
+}
+
+#navigationLocal .current_page_item a, #navigationLocal .current-cat a {
+	background-color: #F0F0F0;
+	color: #252B33;
+}
+
+#posts li.separator, #posts .category a, .post .category a, #pagination, #postpath, #commentlist, #thecomments li, .page h2, #profile .center {
+	border-color: #252B33;
+}
+
+#footer {
+	background-color: #252B33;
+	border-top-color: brown;
+}

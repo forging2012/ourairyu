@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+
+
+
+/* --- Basic Layout --- */
+
+#wrapper {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: 100%;
+	overflow: hidden;
+	text-shadow: 0 1px 1px #FFF;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) inset;
+}
+
+#header {
+	height: 66px;
+	background-image: -moz-linear-gradient(center top , #DFE3E6, #B7C0C7);
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#DFE3E6), to(#B7C0C7));
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #859EB5;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	color: #222;
+}
+
+#content {
+	padding: 50px 50px 100px;
+	background-color: #EEE;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-top-width: 0;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 1px 0 1px rgba(255, 255, 255, 0.7) inset, 1px 0 15px rgba(187, 196, 202, 0.3) inset, 1px 0 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.2);
+	overflow: auto;
+	position: absolute;
+	z-index: 5;
+	top: 88px;
+	left: 5%;
+	right: 5%;
+	bottom: 10%;
+}
+
+#footer {}
+
+
+
+#header h2 { margin: 3px 76px; font: normal bold 24px/1.5 "Times New Roman",Tahoma,Verdana,"MS Yahei", 黑体; }
+#header a { color: #222 !important; }
+#header .avatar { width: 64px; height: 64px; margin-right: 10px; float: left; border: 1px solid #222; border-radius: 5px; }
+#header .meta { margin-left: 76px; padding: 0 3px; }
+
+#home {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 5px;
+	border: 1px solid #859EB5;
+	border-radius: 0.7em;
+	background-image: -moz-linear-gradient(center top , #F9F9F9, #E4E4E4);
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F9F9F9), to(#E4E4E4));
+	text-shadow: 1px 1px 0 #FFF;
+	box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 0.5);
+}
+#home:hover { background-image: -moz-linear-gradient(center top , #F5F5F5, #EEE); background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#F5F5F5), to(#EEE)); }
+#home:active { background-image: -moz-linear-gradient(center top , #E4E4E4, #F9F9F9); background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#E4E4E4), to(#F9F9F9)); }
+#home img { cursor: pointer; display: block; }
+
+
+
+.entry { background-color: #F7F7F7; border: 1px solid #C5CACE; border-radius: 5px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 #FFF; padding: 15px; }

@@ -1,0 +1,142 @@
+/*
+Theme Name: Otakism
+Theme URI: http://www.nintendo.co.jp/
+Description: The theme for otakism.
+Version: 2.0.1
+Author: Ourai
+Author URI: http://www.otakism.com/
+Tags: blue, simple
+Template: otakism_v2.0.1
+*/
+
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+/*html, body {
+	width: 100%;
+	height: 100%;
+}*/
+
+body {
+	font-family: Tahoma, Verdana, "BitStream vera Sans", Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	background-color: #DCEDF4;
+}
+
+ul, ol {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+p {
+	text-indent: 2em;
+	padding: 3px 0;
+	text-align: justify;
+	text-justify: distribute;
+}
+
+p.first {
+	padding-top: 0 !important;
+}
+
+p.last {
+	padding-bottom: 0 !important;
+}
+
+a, a:visited {
+	color: #0F67A1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #47A9D2;
+}
+
+img {
+	border: 0;
+}
+
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.block {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.text-overflow {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.text-overflow:after {
+	content: "...";
+}
+
+.table {
+	display: table;
+	height: 100%;
+	width: 100%;
+	#position: relative;
+	overflow: hidden;
+}
+
+.table-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	#position: absolute;
+	#top: 50%;
+} 
+
+.table-container {
+	width: 100%;
+	#position: relative;
+	#top: -50%;
+	margin: 0 auto;
+	word-break: break-all; 
+	/*overflow: auto;*/
+	word-wrap: break-word;
+}

@@ -1,0 +1,1 @@
+[30-Sep-2014 11:41:06 UTC] PHP Fatal error:  Call to undefined function is_multisite() in /home/ourai/public_html/wp-admin/includes/schema.php on line 50

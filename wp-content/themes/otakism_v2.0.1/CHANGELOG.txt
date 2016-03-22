@@ -1,0 +1,4 @@
+﻿    VERSION DATE       TYPE   CHANGES
+
+    1.0.1   2011/06/30 NEW    Created this theme.
+                       NEW    Created this CHANGLOG file.

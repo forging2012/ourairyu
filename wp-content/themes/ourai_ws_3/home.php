@@ -16,7 +16,7 @@ function template_layout_pad() {
 				<div id="infomation" class="clr">
 					<a href="<?php echo $oc_siteinfo['home']; ?>about/"><?php echo get_avatar('ourairyu@hotmail.com', 128, '', '欧雷'); ?></a>
 					<div id="basicInfo">
-						<h3 class="name">Ourai Lam</h3>
+						<h3 class="name">Ourai Lin</h3>
 						<span class="astro">Pisces</span>, <span class="age">80s</span>
 						<span class="place">Hangzhou, P.R.C.</span>
 						<span class="prof">Front-end Web Developer</span>
@@ -59,7 +59,7 @@ function template_layout_pad() {
 					<?php		unset($temp_avatar);
 							} ?>
 							<div class="bsc-info">
-								<h3 class="name">Ourai Lam</h3>
+								<h3 class="name">Ourai Lin</h3>
 								<span class="astro" data-symbol="&#9811;">Pisces</span>, <span class="age">80s</span>
 								<span class="place">Hangzhou, P.R.C.</span>
 								<span class="prof">Front-end Web Developer</span>
@@ -102,7 +102,7 @@ function template_layout_pad() {
 									<li>Hosted on: <a href="http://www.gegehost.com/" rel="external nofollow">GegeHost</a></li>
 									<li class="separator"><hr /></li>
 									<li>Theme: <?php $themedata = get_theme_data( get_bloginfo('stylesheet_url') ); echo $themedata['Name'].' '.$themedata['Version']; ?></li>
-									<li>Designer: Ourai Lam</li>
+									<li>Designer: Ourai Lin</li>
 								</ul>
 							</div>
 						</div>

@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * DeliciousBrownies - PHP 5 class to play with del.icio.us API
  *
  * PHP version 5

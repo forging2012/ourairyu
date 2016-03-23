@@ -17,7 +17,8 @@ function template_layout_pad() {
 					<?php endif; ?>
 					</div>
 				</div>
-				<ul id="articles" class="view view-container view-mode-content">
+				<div id="sidebar">asdasdasdasd</div>
+				<ul id="articles" class="content view view-container view-mode-content">
 				<?php
 					$counter = 0;
 					$postdate = 0;

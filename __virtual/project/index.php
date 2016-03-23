@@ -4,7 +4,7 @@ global $oc_project;
 global $oc_siteinfo;
 global $oc_res;
 
-$t_template = $oc_project->common . 'page/templates/ourai_ws_3/';
+$t_template = Utils::domain() . 'common/page/templates/ourai_ws_3/';
 
 $oc_siteinfo['title'] = '项目';
 $oc_siteinfo['keywords'] = '欧雷, 宅男, 部屋, 项目, ourai';

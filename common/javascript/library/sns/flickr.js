@@ -1,1 +1,175 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(3(){k(!r.u){l("1f 1g\'t 1h u 1i 1j 1k 4 S!\\n\\1l 1m u S 1n 1o 1p 1q,\\1r 1s u\'s 1t 1u(D://1v.E/) 1w 1x 1y.\\n\\1z 1A 1B 1C 1D 1E a 1F 1G!");F T}v h=r,$=r.u,5=U 1H(),z=3(){};r["1I"]=3(a){l(a.V)};$.G(5,{W:{H:"1J@1K",1L:"欧雷"},6:{A:{m:"7.A.m"},i:{o:"7.i.o",I:"7.i.I",J:"7.i.J"},j:{o:"7.j.o",m:"7.j.m",p:"7.j.p"},X:{Y:"7.X.Y"}},8:3(d,e,f){k(!$.1M(d)||!d.9){l("1N 1O a 9 1P 7 1Q!");F T}v g={"1R":"1S","1T":"Z","1U":1},K=U 1V();$.G(g,d);$.10(g,3(a,b){K.1W(11(a)+"="+11(b))});$.1X({12:"D://6.7.E/1Y/1Z/",20:"8",21:K.22("&"),23:"Z",24:25,26:3(a,b){k(a.V=="27"){k($.L(f))f.B(h,a[e]);M l("\\""+f+"\\" 28 29 a 3!")}M l(a.2a)},2b:3(a,b,c){l(c)}})},13:3(a){4.8({9:4.6.j.m,2c:4.W.H},"j",a)},14:3(a,b){4.8({9:4.6.j.o,N:a},"O",b)},15:3(b,c){v d=4,w="q";4.8({9:4.6.j.p,N:b,16:"i",17:1},"O",3(a){c.B(h,d.P(a.x[0],w))})},P:3(a,b){F"D://18"+a.18+".2d.E/"+a.2e+"/"+a.H+"19"+a.2f+"19"+b+".2g"},p:3(d,e){v f=4,w="q";4.8({9:4.6.j.p,N:d,16:"i",17:1},"O",3(c){$.10(c.x,3(a,b){c.x[a]["12"]=f.P(b,w)});e.B(h,c)})},1a:3(a,b){4.8({9:4.6.i.J,Q:a},"2h",b)},1b:3(a,b){4.8({9:4.6.i.I,Q:a},"x",b)},1c:3(a,b){4.8({9:4.6.i.o,Q:a},"x",b)},1d:3(){4.8({9:4.6.A.m},"2i")}});$.G(z,{2j:3(){v a=R[0],y=R[1],C=R[2];k($.L(a)){C=y;y=a}$.1e(a)?5.14(a,y,C):5.13(y,C)},2k:3(a,b){k($.1e(a)){5.15(a,b)}M k($.L(b))b.B(h,"#")},2l:3(a,b){5.p(a,b)},2m:3(a,b){5.1c(a,b)},w:3(a,b){5.1a(a,b)},2n:3(a,b){5.1b(a,b)},A:3(){5.1d()}});r.z=z})();',62,148,'|||function|this|FP|api|flickr|get|method|||||||||photos|photosets|if|alert|getList||getInfo|getPhotos||window|||jQuery|var|size|photo|callback|Flickr|contacts|call|displayPhotoList|http|com|return|extend|id|getExif|getSizes|encoded_opts|isFunction|else|photoset_id|photoset|getPhotoUrl|photo_id|arguments|file|false|new|stat|user|urls|lookupUser|json|each|encodeURI|url|getAllAlbum|getAlbum|getCover|media|privacy_filter|farm|_|getPhotoSize|getPhotoEXIF|getPhotoInfo|getContacts|isNumeric|You|haven|included|JavaScript|library|before|nplease|put|in|the|correct|position|nor|access|official|website|jquery|to|download|it|nThanks|for|your|support|and|have|good|time|Object|jsonFlickrApi|55640473|N05|username|isPlainObject|Please|specify|of|API|api_key|baced9477f83d19e69b677b7cf4d7580|format|nojsoncallback|Array|push|ajax|services|rest|type|data|join|dataType|crossDomain|true|success|ok|is|not|message|error|user_id|staticflickr|server|secret|jpg|sizes|contact|album|cover|albumPhotos|photoInfo|exif'.split('|'),0,{}));
+/**
+ * JavaScript library to play with flickr API based on jQuery
+ * 
+ * This library is based on JavaScript 1.5(ECMA-262 3rd edition) and jQuery 1.7.1
+ * API is provided by flickr
+ * 
+ * @author		Ourai Lin <ourairyu@hotmail.com>
+ * @copyright	Otakism Promotion Association 2012
+ * @package		library
+ * @version		1.0
+ * @category	JavaScript Library
+ */
+(function() {
+	
+if ( !window.jQuery ) {
+	alert( "You haven't included jQuery JavaScript library before this file!\n\nplease put jQuery file in the correct position,\nor access jQuery's official website(http://jquery.com/) to download it.\n\nThanks for your support and have a good time!" );
+	return false;
+}
+
+var win = window,
+	$ = window.jQuery,
+	
+	FP = new Object(),	// FP is short for Flickr Private
+	Flickr = function() {};
+	
+window["jsonFlickrApi"] = function( rsp ) {
+	alert(rsp.stat);
+};
+
+$.extend( FP, {
+	user: {
+		id: "55640473@N05",
+		username: "欧雷"
+	},
+	
+	// list of flickr API method
+	api: {
+		contacts: {
+			getList: "flickr.contacts.getList"
+		},
+		photos: {
+			getInfo: "flickr.photos.getInfo",
+			getExif: "flickr.photos.getExif",
+			getSizes: "flickr.photos.getSizes"
+		},
+		photosets: {
+			getInfo: "flickr.photosets.getInfo",
+			getList: "flickr.photosets.getList",
+			getPhotos: "flickr.photosets.getPhotos"
+		},
+		urls: {
+			lookupUser: "flickr.urls.lookupUser"
+		}
+	},
+	
+	// a general method to get data from flickr
+	get: function( params, keyword, callback ) {
+		if ( !$.isPlainObject(params) || !params.method ) {
+			alert( "Please specify a method of flickr API!" );
+			return false;
+		}
+		
+		var options = { "api_key": "baced9477f83d19e69b677b7cf4d7580", "format": "json", "nojsoncallback": 1 },
+			encoded_opts = new Array();
+		
+//		if ( $.browser.msie ) {
+//			$.ajaxSetup({ jsonpCallback: "jsonFlickrApi" });
+//		}
+//		else {
+//			options["nojsoncallback"] = 1;
+//		}
+//		
+		$.extend( options, params );
+		$.each( options, function( key, value ) { encoded_opts.push( encodeURI(key) + "=" + encodeURI(value) ); });
+		
+		$.ajax({
+			url: "http://api.flickr.com/services/rest/",
+			type: "get",
+			data: encoded_opts.join("&"),
+			dataType: "json",
+//			jsonpCallback: "jsonFlickrApi",
+			crossDomain: true,
+//			timeout: 3000,				// timeout when over 3 seconds
+			success: function( data, textStatus ) {
+				if ( data.stat == "ok" ) {
+					if ( $.isFunction(callback) )
+						callback.call(win, data[keyword]);
+					else
+						alert("\"" + callback + "\" is not a function!");
+				}
+				else
+					alert(data.message);
+			},
+			error: function( xhr, status, error ) {
+				alert( error );
+			}
+		});
+	},
+	
+	getAllAlbum: function( callback ) {
+		this.get({ method: this.api.photosets.getList, user_id: this.user.id }, "photosets", callback);
+	},
+	getAlbum: function( id, callback ) {
+		this.get({ method: this.api.photosets.getInfo, photoset_id: id }, "photoset", callback);
+	},
+	getCover: function( album_id, callback ) {
+		var _this = this, size = "q";
+		this.get({ method: this.api.photosets.getPhotos, photoset_id: album_id, media: "photos", privacy_filter: 1 }, "photoset", function( photos ) {
+			callback.call(win, _this.getPhotoUrl(photos.photo[0], size));
+		});
+	},
+	getPhotoUrl: function( photo_info, size ) {
+		return "http://farm" + photo_info.farm + ".staticflickr.com/" + photo_info.server + "/" + photo_info.id + "_" + photo_info.secret + "_" + size + ".jpg";
+	},
+	getPhotos: function( album_id, callback ) {
+		var _this = this, size = "q";
+		this.get({ method: this.api.photosets.getPhotos, photoset_id: album_id, media: "photos", privacy_filter: 1 }, "photoset", function( photos ) {
+			$.each( photos.photo, function( idx, photo ) {
+				photos.photo[idx]["url"] = _this.getPhotoUrl(photo, size);
+			});
+			callback.call(win, photos);
+		});
+	},
+	getPhotoSize: function( photo_id, callback ) {
+		this.get({ method: this.api.photos.getSizes, photo_id: photo_id }, "sizes", callback);
+	},
+	getPhotoEXIF: function( photo_id, callback ) {
+		this.get({ method: this.api.photos.getExif, photo_id: photo_id }, "photo", callback);
+	},
+	getPhotoInfo: function( photo_id, callback ) {
+		this.get({ method: this.api.photos.getInfo, photo_id: photo_id }, "photo", callback);
+	},
+	getContacts: function() {
+		this.get({ method: this.api.contacts.getList }, "contact");
+	}
+});
+
+$.extend( Flickr, {
+	album: function() {
+		var id = arguments[0], callback = arguments[1], displayPhotoList = arguments[2];
+		
+		if ( $.isFunction(id) ) {
+			displayPhotoList = callback;
+			callback = id;
+		}
+		
+		$.isNumeric(id) ? FP.getAlbum(id, callback, displayPhotoList) : FP.getAllAlbum(callback, displayPhotoList);
+	},
+	cover: function( album_id, callback ) {
+		if ( $.isNumeric(album_id) ) {
+			FP.getCover(album_id, callback);
+		}
+		else if ( $.isFunction(callback) )
+			callback.call(win, "#");
+	},
+	albumPhotos: function( album_id, callback ) {
+		FP.getPhotos(album_id, callback);
+	},
+	photoInfo: function( photo_id, callback ) {
+		FP.getPhotoInfo(photo_id, callback);
+	},
+	size: function( photo_id, callback ) {
+		FP.getPhotoSize(photo_id, callback);
+	},
+	exif: function( photo_id, callback ) {
+		FP.getPhotoEXIF(photo_id, callback);
+	},
+	contacts: function() {
+		FP.getContacts();
+	}
+});
+
+window.Flickr = Flickr;
+	
+})();

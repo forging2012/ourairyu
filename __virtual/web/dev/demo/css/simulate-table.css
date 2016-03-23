@@ -14,19 +14,11 @@ body { font-size: 16px; background-color: #F7F7F7; }
     padding: 5px;
 }
 
-.table { display: table; *display: block; }
+.table { display: table; }
+.table > div { display: table-cell; vertical-align: middle; border-left: 1px solid #CCC; padding: 10px; }
+.table > div:first-child { border-left: none; }
 
-.extra, .display, .operation {
-	display: table-cell;
-	*display: inline;
-	*zoom: 1;
-	vertical-align: middle;
-	border-left: 1px solid #CCC;
-	padding: 10px;
-}
-.extra { border-left: none; }
-
-.display { *max-width: 70%; _width: 70%; }
+.display { vertical-align: top !important; }
 .display div span { margin-right: 2em; }
 
 .operation .dib-wrap { white-space: nowrap; }

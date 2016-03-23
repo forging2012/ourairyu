@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+
+
+/* --- Content: Article Content --- */
+
+.article { margin-left: 64px; }
+.article-body { padding-top: 30px; padding-bottom: 50px; }
+.article-body p { padding: 8px 0; }
+
+
+
+/* --- Sidebar --- */
+
+.figure { padding: 10px; position: relative; }
+.figure a { padding-left: 10px; }
+.figure a.hp { font-size: 10px; font-family: Verdana, "Times New Roman", Tahoma, "MS Yahei", 黑体; }
+.figure h3 { font-size: 14px; }
+.figure h3 img { width: 64px; height: 64px; border: 1px solid #222; border-radius: 5px; float: left; margin-bottom: 10px; }
+.figure p { clear: both; text-indent: 0; padding: 0; }

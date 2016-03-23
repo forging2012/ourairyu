@@ -14,7 +14,7 @@ require_once( $dir . 'Localization.php' );
  * 用于运行环境检测、本地化等
  * 
  * @package		CLS_Utils
- * @author		Ourai Lam <ourairyu@hotmail.com>
+ * @author		Ourai Lin <ourairyu@hotmail.com>
  * @copyright	2012 Otakism
  */	
 class CLS_Utils implements UtilEnv, UtilLoc {

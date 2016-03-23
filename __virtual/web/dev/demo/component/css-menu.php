@@ -55,9 +55,6 @@ $oc_project->html_header(); ?>
 				<li class="menu-item"><a href="javascript:void(0);" title="">Methodology</a></li>
 				<li class="menu-item"><a href="javascript:void(0);" title="">Woolgather</a></li>
 			</ul>
-			<div id="content">
-				<input type="text" class="fr" placeholder="搜索">
-			</div>
 		</div>
 <?php
 

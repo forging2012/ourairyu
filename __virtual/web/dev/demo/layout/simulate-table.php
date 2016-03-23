@@ -11,7 +11,7 @@ global $oc_siteinfo;
 global $oc_setting;
 global $oc_res;
 
-$oc_setting['limit_ie'] = false;
+// $oc_setting['limit_ie'] = false;
 
 $t_dirname = 'demo';
 $t_pathname = $oc_project->pathname;

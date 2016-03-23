@@ -8,7 +8,7 @@
     background-color: #EEE;
     box-shadow: 0 0.5em 1em -1em #666 inset;
     margin: 0 0 -81px;
-    // overflow: hidden; 因为这条规则影响侧边栏显示，并且忘记起什么作用，所以暂时注释掉
+    overflow: hidden;
     position: relative; z-index: 1;
 }
 .layout-main, .layout-sub { padding: 81px 0 0; }

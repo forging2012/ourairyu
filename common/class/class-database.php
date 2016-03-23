@@ -8,7 +8,7 @@ if ( !class_exists('CLS_Database') ) :
  * 数据库操作
  * 
  * @package		CLS_Database
- * @author		Ourai Lam <ourairyu@hotmail.com>
+ * @author		Ourai Lin <ourairyu@hotmail.com>
  * @copyright	2012 Otakism
  */
 class CLS_Database {

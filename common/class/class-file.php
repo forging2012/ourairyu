@@ -8,7 +8,7 @@ if ( !class_exists('CLS_File') ) :
  * 处理文件
  * 
  * @package		CLS_File
- * @author		Ourai Lam <ourairyu@hotmail.com>
+ * @author		Ourai Lin <ourairyu@hotmail.com>
  * @copyright	2012 Otakism
  */
 class CLS_File {

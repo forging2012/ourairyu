@@ -1,7 +1,7 @@
 /*!
  * JavaScript Development Kit
  * 
- * Copyright 2012, Ourai Lam
+ * Copyright 2012, Ourai Lin
  * 
  * Date: Fri Dec 21 ‏‎21:22:50 2012
  */

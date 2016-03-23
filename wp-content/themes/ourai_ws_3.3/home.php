@@ -13,6 +13,7 @@ function template_layout_page() {
             <div class="profile_info">
               <h3 class="author"><a href="#" class="author_link" itemprop="name">Ourai Lin</a></h3>
               <p>Talk less, Do more. Raise my self-worth.</p>
+              <a href="http://hz.ourai.ws/">Hangzhou</a>, China
             </div>
           </div>
         </div>

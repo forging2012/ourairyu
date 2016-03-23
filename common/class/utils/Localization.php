@@ -8,7 +8,7 @@ if ( !interface_exists('UtilLoc') ) :
  * Localization.
  * 
  * @package		utils
- * @author		Ourai Lam <ourairyu@hotmail.com>
+ * @author		Ourai Lin <ourairyu@hotmail.com>
  * @copyright	2012 Otakism
  */	
 interface UtilLoc {

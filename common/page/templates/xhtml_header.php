@@ -16,7 +16,7 @@ $temp_siteinfo = array(
 	'charset' => 'UTF-8',
 	'author' => array(
 		'zh' => '欧雷',
-		'en' => 'Ourai Lam'
+		'en' => 'Ourai Lin'
 	)
 );
 $temp_res = array( 'css' => array(

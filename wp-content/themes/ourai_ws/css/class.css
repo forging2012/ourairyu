@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+
+
+
+/* --- Float --- */
+
+.fl { float: left; }
+.fr { float: right; }
+
+
+
+/* --- Clearfix --- */
+
+.clr { display: inline-block; }
+[class~="clr"], html[xmlns] .clr { display: block; }
+* html .clr { height: 1%; }
+.clr:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+
+
+
+/* --- Absolute Center --- */
+
+.abs-ctr { display: table; height: 100%; width: 100%; #position: relative; overflow: hidden; }
+.abs-ctr-wrp { display: table-cell; vertical-align: middle; #position: absolute; #top: 50%; } 
+.abs-ctr-cnt { width: 100%; #position: relative; #top: -50%; margin: 0 auto; word-break: break-all; word-wrap: break-word; }
+
+
+
+/* --- List Table --- */
+.table-list { table-layout: fixed; background-color: #FFF; }
+.table-list th, .table-list td { border-width: 1px; }
+.table-list thead th, .table-list tfoot th { text-align: left; background: -moz-linear-gradient(center top, #FFF, #CCC 100%); }
+
+
+
+/* --- Form Table --- */
+
+.table-form { width: 100%; }
+.table-form caption { text-align: left; font-weight: bold; }
+.table-form th { border-width: 1px 0; }
+.table-form td { border-width: 1px 0 1px 1px; }
+.table-form tbody th { text-align: right; font-weight: normal; }
+
+
+
+/* --- Form Elements --- */
+
+.input-form { height: 21px; line-height: 21px; }
+.submit-form { cursor: pointer; }
+input.disabled { background-color: #F5F5F5; }
+
+
+
+/* --- Triangle Arrows --- */
+
+.tri { width: 0; height: 0; position: absolute; text-indent: -999em; border: 0 solid transparent; }
+.tri-t { border-top-width: 0 !important; border-bottom-color: #000; }
+.tri-r { border-right-width: 0 !important; border-left-color: #000; }
+.tri-b { border-bottom-width: 0 !important; border-top-color: #000; }
+.tri-l { border-left-width: 0 !important; border-right-color: #000; }
+
+
+
+/* --- Box Modules --- */
+.bb { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.lf { word-wrap: break-word; word-wrap: normal\0; word-break: break-all; white-space: normal; }

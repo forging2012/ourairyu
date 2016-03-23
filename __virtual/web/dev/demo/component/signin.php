@@ -11,8 +11,6 @@ global $oc_siteinfo;
 global $oc_setting;
 global $oc_res;
 
-$oc_setting['limit_ie'] = false;
-
 $t_dirname = 'demo';
 $t_pathname = $oc_project->pathname;
 $t_dirdemo = $oc_project->root . substr($t_pathname, 0, (strpos($t_pathname, $t_dirname) + strlen($t_dirname))) . '/';
